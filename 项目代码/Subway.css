@@ -1,0 +1,368 @@
+#main {
+    height: 98%;
+    width: 99%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+#other1 {
+    position: fixed;
+    z-index: 0;
+}
+
+#start_p {
+    outline: 0;
+    border: 0px solid #000000;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '宋体';
+}
+
+#end_p {
+    border: 0px solid #000000;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '宋体';
+    outline: 0;
+}
+
+.fengge {
+    width: 180px;
+    height: 1px;
+    position: relative;
+    left: 10px;
+    border-top: solid rgba(0, 0, 0, 0.3) 1px;
+}
+
+#shousuo {
+    background-color: #e7aa39dc;
+    width: 80px;
+    color: #ffffff;
+    height: 30px;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+#shousuo:hover {
+    background-color: #e79909fa;
+}
+
+#res {
+    height: 500px;
+    width: 180px;
+    font-family: '宋体';
+    font-size: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid #000000;
+    background-color: #8c8989ac;
+}
+
+#tjzd {
+    background-color: #f584a4f6;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    font-family: '宋体';
+    position: absolute;
+    right: 54px;
+    top: 45px;
+    border: 1px solid #b84968;
+    width: 200px;
+    height: 30px;
+}
+
+#tjzd:hover {
+    background-color: #f75784;
+}
+
+#tjxl {
+    background-color: #f584a4f6;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    font-family: '宋体';
+    position: absolute;
+    right: 54px;
+    top: 85px;
+    border: 1px solid #b84968;
+    width: 200px;
+    height: 30px;
+}
+
+#tjxl:hover {
+    background-color: #f75784;
+}
+
+.black_overlay {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.6;
+    opacity: .60;
+    filter: alpha(opacity=60);
+}
+
+#xl_content {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 33%;
+    width: 30%;
+    height: 46%;
+    padding: 16px;
+    border: 2px solid orange;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+    background-image: url('./static/背景.png');
+}
+
+.white_content {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 33%;
+    width: 30%;
+    height: 46%;
+    padding: 16px;
+    border: 2px solid orange;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+    background-image: url('./static/背景.png');
+}
+
+.white_content::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.white_content::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #53535393;
+}
+
+.white_content::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}
+
+#new_name {
+    outline: 0;
+    border: 0px solid #000000;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '宋体';
+}
+
+#new_line_name {
+    outline: 0;
+    border: 0px solid #000000;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '宋体';
+}
+
+#new_x {
+    outline: 0;
+    border: 0px solid #000000;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '宋体';
+}
+
+#new_y {
+    outline: 0;
+    border: 0px solid #000000;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '宋体';
+}
+
+.link_point {
+    outline: 0;
+    border: 0px solid #000000;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '宋体';
+}
+
+.fengge {
+    width: 180px;
+    height: 1px;
+    position: relative;
+    left: 15px;
+    border-top: solid rgba(0, 0, 0, 0.3) 1px;
+}
+
+.cs {
+    font-size: 15px;
+    font-family: '宋体';
+    color: rgba(10, 10, 10, 0.7);
+    background-color: #ffffff;
+    height: 23px;
+    width: 200px;
+    line-height: 23px;
+}
+
+#cs1 {
+    height: 0px;
+}
+
+.new_cate {
+    border: 1px solid #8c8989;
+    width: 85px;
+}
+
+#tjljzd {
+    background-color: rgba(223, 139, 29, 0.7);
+    width: 120px;
+    height: 25px;
+    position: relative;
+    left: 18px;
+    top: 5px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+#zjjd {
+    background-color: #33a4dca8;
+    position: relative;
+    left: 18px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 0px;
+    font-family: '宋体';
+    color: white;
+}
+
+#zjxl {
+    background-color: #33a4dca8;
+    position: relative;
+    left: 18px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 0px;
+    font-family: '宋体';
+    color: white;
+    margin-top: 10px;
+}
+
+#gb {
+    background-color: #f15a22a8;
+    position: relative;
+    left: 38px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 0px;
+    font-family: '宋体';
+    width: 100px;
+    color: white;
+}
+
+
+/*         
+#files {
+    background-color: #90d7ec;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    font-family: '宋体';
+    position: absolute;
+    right: 850px;
+    top: 10px;
+    border: 0px;
+    width: 140px;
+    height: 30px;
+    opacity: 0;
+} */
+
+#export {
+    background-color: #D0EEFF;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #1E88C7;
+    font-family: '宋体';
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    border: 1px solid #99D3F5;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+}
+
+#export:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+}
+
+.file {
+    position: absolute;
+    right: 165px;
+    font-size: 17px;
+    top: 10px;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    font-family: '宋体';
+    width: 70px;
+    text-align: center;
+}
+
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+#bj1 {
+    background-image: url(./static/beijin1.png);
+    position: fixed;
+    width: 141px;
+    height: 100%;
+    left: 0px;
+    z-index: -3;
+}

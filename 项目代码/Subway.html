@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>上海地铁线路图</title>
+    <script src="static/echart_5_1.js"></script>
+    <link href="Subway.css" rel="stylesheet" type="text/css" />
+</head>
+<!DOCTYPE html>
+<html>
+
+
+<body>
+    <div id='bj1'></div>
+    <div id='other1'>
+        <img src="./static/绿圆.png">
+        <input type="text" id="start_p" placeholder="请输入起点">
+        <div class='fengge'></div>
+        <img src="./static/红圆.png">
+        <input type="text" id="end_p" placeholder="请输入终点">
+        <div class='fengge'></div>
+        <input type=button onclick="find_path('0')" id='shousuo' value="较便捷">
+        <input type=button onclick="find_path('1')" id='shousuo' value="少换乘">
+        <div id="result">
+        </div>
+    </div>
+    <div id="other">
+        <a class="file">选择文件
+        <input type="file" name="" id="files">
+    </a>
+        <input type="button" id="export" value="下载地图" />
+        <input type=button onclick="show_tj()" id='tjzd' value="添加站点">
+        <input type=button onclick="show_tjxl()" id='tjxl' value="添加线路">
+        <div id='xl_content'>
+            <h2>填写增加的线路</h2>
+            <img src="./static/蓝圆.png">
+            <input type="text" id="new_line_name" placeholder="新增地铁线路名">
+            <div class='fengge'></div>
+            <button onclick="addLine()" id='zjxl'>添加线路</button>
+        </div>
+        <div id="light" class="white_content">
+            <h2>填写增加的站点</h2>
+            <img src="./static/蓝圆.png">
+            <input type="text" id="new_name" placeholder="新增地铁站名字">
+            <div class='fengge'></div>
+            <img src="./static/蓝圆.png">
+            <input id='new_x' placeholder="新增地铁站的x坐标:" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+            <div class='fengge'></div>
+            <img src="./static/蓝圆.png">
+            <input id='new_y' placeholder="新增地铁站的y坐标:" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+            <div class='fengge'></div>
+
+            <div class='cs' id='cs1'>
+            </div>
+            <br>
+            <input type=button onclick="add_txt()" value="添加可连接站点" id='tjljzd'>
+            <br>
+            <br>
+            <button onclick="addPoint()" id='zjjd'>确认</button>
+        </div>
+        <div id="fade" class="black_overlay" onclick="close_tj()">
+        </div>
+    </div>
+
+    <div id="main"></div>
+
+    <script src="init.js">
+    </script>
+    <script src="read.js">
+    </script>
+    <script src="draw.js">
+    </script>
+    <script src="find_path.js"></script>
+    <script src="up_down_load.js"></script>
+
+    <script src="change.js">
+    </script>
+    <script src='save.js'>
+    </script>
+</body>
+
+</html>
